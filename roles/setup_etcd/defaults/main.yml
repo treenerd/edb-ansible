@@ -71,5 +71,5 @@ supported_os:
   - Debian9
   - Debian10
   - Rocky8
-  - Almalinux8
+  - AlmaLinux8
   - OracleLinux7
