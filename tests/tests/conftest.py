@@ -10,7 +10,7 @@ import yaml
 # <role_name>/vars.json
 EDB_ANSIBLE_VARS = os.getenv('EDB_ANSIBLE_VARS')
 # Operating system name of the containers
-EDB_OS = os.getenv('EDB_OS', 'almalinux8')
+EDB_OS = os.getenv('EDB_OS', 'rocky8')
 # Path to the ansible inventory file: <role_name>/inventory.yml
 EDB_INVENTORY = os.getenv('EDB_INVENTORY')
 # Postgres version
