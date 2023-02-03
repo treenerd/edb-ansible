@@ -10,7 +10,7 @@ import yaml
 # <role_name>/vars.json
 EDB_ANSIBLE_VARS = os.getenv('EDB_ANSIBLE_VARS')
 # Operating system name of the containers
-EDB_OS = os.getenv('EDB_OS', 'rocky8')
+EDB_OS = os.getenv('EDB_OS', 'almalinux8')
 # Path to the ansible inventory file: <role_name>/inventory.yml
 EDB_INVENTORY = os.getenv('EDB_INVENTORY')
 # Postgres version
@@ -84,6 +84,7 @@ def get_pg_version():
 
 def os_family():
     if (get_os().startswith('centos') or get_os().startswith('rocky')
+        or get_os().startswith('almalinux')
         or get_os().startswith('oraclelinux')):
         return 'RedHat'
     elif (get_os().startswith('debian') or get_os().startswith('ubuntu')):

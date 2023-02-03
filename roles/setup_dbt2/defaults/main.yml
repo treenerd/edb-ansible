@@ -22,4 +22,5 @@ supported_os:
   - RedHat7
   - RedHat8
   - Rocky8
+  - Almalinux8
   - OracleLinux7
